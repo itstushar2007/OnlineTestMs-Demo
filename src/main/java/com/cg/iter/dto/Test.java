@@ -35,16 +35,16 @@ public class Test {
 	private LocalDateTime endTime;
 	
 	@OneToOne
-	private User userId;
+	private User userid;
 	
 	
 	
-	public User getUserId() {
-		return userId;
+	public User getUserid() {
+		return userid;
 	}
 
 	public void setUserId(User userId) {
-		this.userId = userId;
+		this.userid = userId;
 	}
 
 
