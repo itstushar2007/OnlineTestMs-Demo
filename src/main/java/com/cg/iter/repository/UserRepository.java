@@ -13,10 +13,10 @@ import com.cg.iter.dto.User;
 
 public interface UserRepository extends CrudRepository<User, Long> {
 	
-	@Query(value="select user_id from student where user_name and user_password=:password",nativeQuery = true)
+	@Query(value="select userid from student where username and userpassword=:password",nativeQuery = true)
 	public Optional<BigInteger> checkLogin(String username,String password);
 	
-	@Query(value="select test_id from student where user_id=:userid",nativeQuery = true)
+	@Query(value="select test_id from student where userid=:userid",nativeQuery = true)
 	public Long getTestByUserId(@Param("userid")Long userid);
 	
 	
