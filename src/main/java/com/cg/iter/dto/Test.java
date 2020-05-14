@@ -24,7 +24,8 @@ public class Test {
 	private String testTitle;
 	private LocalTime testDuration;
 	
-	@OneToMany(targetEntity=Question.class,cascade = CascadeType.ALL,fetch = FetchType.LAZY, mappedBy="test")   
+	@OneToMany(fetch=FetchType.LAZY,mappedBy="Test")
+	@JoinColumn(name="T_id")
 	private Set<Question> testQuestions;
 	
 	
