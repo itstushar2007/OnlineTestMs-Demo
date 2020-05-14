@@ -22,7 +22,11 @@ public class Question {
 	private BigDecimal questionMarks;
 	private Integer chosenAnswer;
 	private BigDecimal marksScored;
+	
+	@OneToOne
+	@JoinColumn(name="Test_NUMBER")
 	private Test test;
+	
 	
 	public Question() {}
 
