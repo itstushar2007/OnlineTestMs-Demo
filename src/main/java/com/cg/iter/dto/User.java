@@ -22,14 +22,14 @@ public class User {
 	
 	private Boolean isAdmin;
 	private String userpassword;
-	private BigInteger test_id;
+	private BigInteger testId;
 	
-	public BigInteger getTest_id() {
-		return test_id;
+	public BigInteger getTestId() {
+		return testId;
 	}
 
-	public void setTest_id(BigInteger test_id) {
-		this.test_id = test_id;
+	public void setTestId(BigInteger test_id) {
+		this.testId = test_id;
 	}
 
 	public User() {
@@ -43,7 +43,7 @@ public class User {
 		this.userTest = useTest;
 		this.isAdmin = isAdmin;
 		this.userpassword = userpassword;
-		this.test_id = test_id;
+		this.testId = test_id;
 	}
 
 	public Long getUserid() {
